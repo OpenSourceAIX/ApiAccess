@@ -47,7 +47,7 @@ public class AuthService {
             String access_token = jsonObject.getString("access_token");
             return access_token;
         } catch (Exception e) {
-            System.err.printf("获取token失败�????");
+            System.err.printf("fail getting token");
             e.printStackTrace(System.err);
         }
         return null;
