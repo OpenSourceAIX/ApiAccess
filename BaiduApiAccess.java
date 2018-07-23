@@ -15,7 +15,7 @@ import com.google.appinventor.components.runtime.EventDispatcher;
 import android.os.Handler;
 import cn.colintree.aix.ApiAccess.util.baidu.AuthService;
 
-@DesignerComponent(version = YoutuApiAccess.VERSION,
+@DesignerComponent(version = BaiduApiAccess.EXTENSION_VERSION,
     description = "for http://ai.baidu.com/docs#/Auth/top",
     category = ComponentCategory.EXTENSION,
     nonVisible = true,
@@ -23,7 +23,7 @@ import cn.colintree.aix.ApiAccess.util.baidu.AuthService;
 @SimpleObject(external = true)
 public class BaiduApiAccess extends AndroidNonvisibleComponent {
 
-    public static final int VERSION = 1;
+    public static final int EXTENSION_VERSION = 2;
 
     private final Handler handler;
 

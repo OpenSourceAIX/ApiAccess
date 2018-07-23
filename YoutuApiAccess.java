@@ -17,15 +17,13 @@ import cn.colintree.aix.ApiAccess.util.youtu.Base64Util;
 import cn.colintree.aix.ApiAccess.util.youtu.MD5;
 import cn.colintree.aix.ApiAccess.util.youtu.YoutuSign;
 
-@DesignerComponent(version = BaiduApiAccess.VERSION,
+@DesignerComponent(version = BaiduApiAccess.EXTENSION_VERSION,
     description = "for http://open.youtu.qq.com/#/develop/tool-authentication",
     category = ComponentCategory.EXTENSION,
     nonVisible = true,
     iconName = "aiwebres/tencent-favicon.ico")
 @SimpleObject(external = true)
 public class YoutuApiAccess extends AndroidNonvisibleComponent {
-
-    public static final int VERSION = 1;
 
     private final Form form;
 
