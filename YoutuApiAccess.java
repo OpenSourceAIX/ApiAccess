@@ -11,7 +11,10 @@ import com.google.appinventor.components.runtime.AndroidNonvisibleComponent;
 import com.google.appinventor.components.runtime.ComponentContainer;
 import com.google.appinventor.components.runtime.Form;
 import com.google.appinventor.components.runtime.util.ErrorMessages;
+import com.google.appinventor.components.runtime.util.YailList;
 
+import cn.colintree.aix.ApiAccess.util.youtu.Base64Util;
+import cn.colintree.aix.ApiAccess.util.youtu.MD5;
 import cn.colintree.aix.ApiAccess.util.youtu.YoutuSign;
 
 @DesignerComponent(version = BaiduApiAccess.VERSION,
@@ -47,6 +50,25 @@ public class YoutuApiAccess extends AndroidNonvisibleComponent {
                 +")");
                 return "";
         }
+    }
+
+    @SimpleFunction
+    public static String MD5(String data) {
+        return MD5.stringToMD5(data);
+    }
+
+    @SimpleFunction
+    public static String Base64(String data) {
+        return Base64Util.encode(data.getBytes());
+    }
+
+    @SimpleFunction
+    public static String FormatString(String format, YailList arguments) {
+        Object[] args = new Object[arguments.size()];
+        for (int i = 0; i < args.length; i++) {
+            args[i] = arguments.getObject(i);
+        }
+        return String.format(format, args);
     }
 
 }
