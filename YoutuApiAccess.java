@@ -69,4 +69,14 @@ public class YoutuApiAccess extends AndroidNonvisibleComponent {
         return String.format(format, args);
     }
 
+    @SimpleFunction
+    public static int ByteLength(String text) {
+        return text.getBytes().length;
+    }
+
+    @SimpleFunction
+    public static int ByteLengthWithEncoding(String text, String encoding) {
+        return text.getBytes(encoding).length;
+    }
+    
 }
