@@ -23,7 +23,7 @@ import cn.colintree.aix.ApiAccess.util.baidu.AuthService;
 @SimpleObject(external = true)
 public class BaiduApiAccess extends AndroidNonvisibleComponent {
 
-    public static final int EXTENSION_VERSION = 2;
+    public static final int EXTENSION_VERSION = 3;
 
     private final Handler handler;
 
