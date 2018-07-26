@@ -32,11 +32,15 @@ Functions / 函数(方法)
 
 ### YoutuApiAccess
 
-![](https://user-images.githubusercontent.com/22613139/43084797-f68b4bd4-8ecb-11e8-89dc-90840f3b2dcf.png)
+![](https://user-images.githubusercontent.com/22613139/43247041-2087e372-90e6-11e8-9f92-11b4557ec578.png)
 
 Functions / 函数(方法)
 
 * Base64(String data)
+* ByteLength(String text)
+    * Get byte length using default encoding of the system
+* ByteLengthWithEncoding(String text, String encoding)
+    * Get byte length with specific encoding, e.g. "utf-8"
 * FormatString(String format, List arguments)
     * en - https://dzone.com/articles/java-string-format-examples
     * zh - https://blog.csdn.net/lonely_fireworks/article/details/7962171
