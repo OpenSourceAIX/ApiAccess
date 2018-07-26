@@ -39,8 +39,10 @@ Functions / 函数(方法)
 * Base64(String data)
 * ByteLength(String text)
     * Get byte length using default encoding of the system
+    * 获取字符串在系统默认编码下的字节长度
 * ByteLengthWithEncoding(String text, String encoding)
-    * Get byte length with specific encoding, e.g. "utf-8"
+    * Get byte length with specific encoding, e.g. `utf-8`
+    * 获取字符串在用户指定编码下的字节长度，如`utf-8`
 * FormatString(String format, List arguments)
     * en - https://dzone.com/articles/java-string-format-examples
     * zh - https://blog.csdn.net/lonely_fireworks/article/details/7962171
