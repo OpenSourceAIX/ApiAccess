@@ -3,6 +3,8 @@
  */
 package cn.colintree.aix.ApiAccess;
 
+import java.io.UnsupportedEncodingException;
+
 import com.google.appinventor.components.annotations.DesignerComponent;
 import com.google.appinventor.components.annotations.SimpleFunction;
 import com.google.appinventor.components.annotations.SimpleObject;
@@ -75,7 +77,7 @@ public class YoutuApiAccess extends AndroidNonvisibleComponent {
     }
 
     @SimpleFunction
-    public static int ByteLengthWithEncoding(String text, String encoding) {
+    public static int ByteLengthWithEncoding(String text, String encoding) throws UnsupportedEncodingException {
         return text.getBytes(encoding).length;
     }
     
